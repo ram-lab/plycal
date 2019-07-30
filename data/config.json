@@ -1,0 +1,121 @@
+{
+    "cam": {
+        "D": [
+            -0.343338393354793,
+            0.0806974339575093,
+            -0.000525540233605921,
+            0.00260712954510535,
+            0.0
+        ],
+        "K": [
+            [
+                1085.87150849092,
+                0.0,
+                967.618455232044
+            ],
+            [
+                0.0,
+                1085.71794017434,
+                512.798695326787
+            ],
+            [
+                0.0,
+                0.0,
+                1.0
+            ]
+        ]
+    },
+    "img": {
+        "edlines": {
+            "anchorThreshold": 10,
+            "gradientThreshold": 80,
+            "ksize": 3,
+            "lineFitErrThreshold": 2,
+            "minLineLen": 30,
+            "scanIntervals": 1,
+            "sigma": 1
+        },
+        "feature": {
+            "offset": 3,
+            "size": 8,
+            "threshold": 0.8
+        },
+        "filter": {
+            "line_angle_threshold": 8,
+            "point_center_factor": 0.4,
+            "point_line_threshold": 80
+        },
+        "init": [
+            [
+                1200.8,
+                273.6
+            ],
+            [
+                1509.6,
+                420.0
+            ],
+            [
+                1589.6,
+                775.2
+            ],
+            [
+                888.0,
+                645.6
+            ]
+        ],
+        "merge": {
+            "angle_threshold": 2,
+            "distance_threshold": 35,
+            "endpoint_distance_threshold": 80
+        }
+    },
+    "pc": {
+        "angle_resolution": 1.5,
+        "edge": {
+            "distance_threshold": 0.05,
+            "point_num_min": 5
+        },
+        "filter": {
+            "angle_size": 73.0,
+            "angle_start": 327.0,
+            "distance": 5.3,
+            "floor_gap": 1.2
+        },
+        "plane": {
+            "distance_threshold": 0.06,
+            "point_num_min": 20
+        },
+        "ring": {
+            "endpoint_num": 2,
+            "point_num_min": 7
+        }
+    },
+    "size": 4,
+    "tf": [
+        [
+            -0.0587731866433256,
+            -0.997313988353226,
+            0.0437095088827632,
+            0.0584119503362388
+        ],
+        [
+            0.0680705634344673,
+            -0.0476870940689982,
+            -0.996540184565063,
+            -0.104226321432097
+        ],
+        [
+            0.995947845484644,
+            -0.0555945113679224,
+            0.0706904475884742,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+        ]
+    ],
+    "track_error_threshold": 30
+}
