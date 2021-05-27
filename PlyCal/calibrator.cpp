@@ -411,7 +411,9 @@ void  Calibrator::Optimize(Eigen::Matrix4d& tf)
 	options.max_num_iterations = 5000;
 	// or use all cpu cores
 	options.num_threads= boost::thread::hardware_concurrency() - 1;
+#if (CERES_VERSION_MAJOR < 2)
 	options.num_linear_solver_threads = options.num_threads;
+#endif
 	//options.minimizer_progress_to_stdout = true;
 
 	ceres::Solve(options, &problem, &summary);

@@ -1,8 +1,9 @@
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
-# init_qt: Let's do the CMake job for us
+# Let CMake do the job for us
 set(CMAKE_AUTOMOC ON) # For meta object compiler
 set(CMAKE_AUTORCC ON) # Resource files
 set(CMAKE_AUTOUIC ON) # UI file
+add_compile_options(-fPIC)
 
 
 find_package(
@@ -13,6 +14,7 @@ find_package(
 	Gui
 	Widgets
 	)
+
 find_package(
 	VTK
 	REQUIRED
@@ -20,6 +22,7 @@ find_package(
 
 include_directories(
 	${VTK_INCLUDE_DIRS}
+	${Qt5Widgets_INCLUDE_DIRS}
 	)
 
 link_directories(
